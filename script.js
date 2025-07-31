@@ -1,3 +1,4 @@
+// Part 1: Understanding and Creating Objects
 
 let student = {
     name: "Suban",
@@ -21,6 +22,8 @@ console.log(student.age);
 
 console.log(student.info());
 
+// Part 2: Working with jSON
+
 let studentJsonString = JSON.stringify(student)
 
 console.log(studentJsonString);
@@ -29,6 +32,8 @@ let studentObject = JSON.parse(studentJsonString)
 
 console.log(studentObject);
 console.log(student);
+
+//Part 3: Destructuring
 
 const {name, courses} = student
 
@@ -41,6 +46,8 @@ const [first, second] = scores;
 
 console.log(first);
 console.log(second);
+
+// Part 4: Spread Operator
 
 let cloneStudent = {...student}
 
@@ -56,8 +63,12 @@ let mergedCourses = [...student.courses, ...newCourses]
 
 console.log(mergedCourses);
 
+// Part 5: Object Methods
+
 console.log(student.addCourse("gym"));
 console.log(student.totalCourses());
+
+// Bonus Task:
 
 let averageScore = function() {
     const total = scores.reduce((sum, score) => sum + score, 0);
