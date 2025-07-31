@@ -38,3 +38,7 @@ console.log(second);
 let cloneStudent = {...student}
 
 console.log(cloneStudent);
+
+cloneStudent.gradutationYear = 2026
+
+console.log(cloneStudent);
