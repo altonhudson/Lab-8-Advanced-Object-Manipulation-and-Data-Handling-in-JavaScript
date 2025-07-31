@@ -22,3 +22,8 @@ let studentObject = JSON.parse(studentJsonString)
 
 console.log(studentObject);
 console.log(student);
+
+const {name, courses} = student
+
+console.log(name);
+console.log(courses);
