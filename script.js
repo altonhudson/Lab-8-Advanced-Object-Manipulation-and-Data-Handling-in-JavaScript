@@ -34,3 +34,7 @@ const [first, second] = scores;
 
 console.log(first);
 console.log(second);
+
+let cloneStudent = {...student}
+
+console.log(cloneStudent);
