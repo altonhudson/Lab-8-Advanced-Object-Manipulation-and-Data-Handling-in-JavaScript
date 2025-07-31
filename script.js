@@ -41,4 +41,10 @@ console.log(cloneStudent);
 
 cloneStudent.gradutationYear = 2026
 
-console.log(cloneStudent);
+console.log(cloneStudent)
+
+let newCourses = ["Biology", "Geography", "Introduction to javaScript", "Physical Education"]
+
+let mergedCourses = [...student.courses, ...newCourses]
+
+console.log(mergedCourses);
