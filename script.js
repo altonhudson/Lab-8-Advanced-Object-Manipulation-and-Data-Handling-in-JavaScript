@@ -59,3 +59,10 @@ console.log(mergedCourses);
 console.log(student.addCourse("gym"));
 console.log(student.totalCourses());
 
+let averageScore = function() {
+    const total = scores.reduce((sum, score) => sum + score, 0);
+    const average = total / scores.length
+    return `The average score is: ${average}%`
+}
+
+console.log(averageScore());
