@@ -6,7 +6,11 @@ let student = {
     courses: ["English", "Math", "History", "Physics", "Computer Programming"],
     info: function() {
         return `The student ${this.name} age ${this.age} is enrolled in the following courses ${this.courses.join(", ")}.`;
-    } 
+    },
+    addCourse: function(course){
+        this.courses.push(course)
+        return this.courses 
+    }
 }
 
 console.log(student.name);
@@ -48,3 +52,5 @@ let newCourses = ["Biology", "Geography", "Introduction to javaScript", "Physica
 let mergedCourses = [...student.courses, ...newCourses]
 
 console.log(mergedCourses);
+
+console.log(student.addCourse("gym"));
