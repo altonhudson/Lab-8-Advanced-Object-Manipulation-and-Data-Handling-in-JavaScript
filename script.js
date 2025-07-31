@@ -10,6 +10,9 @@ let student = {
     addCourse: function(course){
         this.courses.push(course)
         return this.courses 
+    },
+    totalCourses: function() {
+        return `The total number of courses is: ${this.courses.length}`
     }
 }
 
@@ -54,3 +57,5 @@ let mergedCourses = [...student.courses, ...newCourses]
 console.log(mergedCourses);
 
 console.log(student.addCourse("gym"));
+console.log(student.totalCourses());
+
